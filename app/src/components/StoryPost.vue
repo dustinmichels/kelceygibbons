@@ -23,8 +23,7 @@ defineProps({
     <div class="mb-8">
       <router-link
         to="/writing"
-        class="inline-flex items-center gap-2 font-mono text-xs uppercase font-bold hover:text-[var(--sky-surge)] transition-colors"
-      >
+        class="inline-flex items-center gap-2 font-mono text-xs uppercase font-bold hover:text-[var(--sky-surge)] transition-colors">
         <ArrowLeft class="w-4 h-4" />
         Back to Archives
       </router-link>
@@ -40,15 +39,12 @@ defineProps({
         </h1>
       </header>
 
-      <div
-        class="prose prose-lg md:prose-xl text-[var(--blue-slate)] font-serif leading-relaxed max-w-none"
-      >
+      <div class="prose prose-lg md:prose-xl text-[var(--blue-slate)] font-serif leading-relaxed max-w-none">
         <slot></slot>
       </div>
 
       <footer
-        class="mt-12 pt-8 border-t border-[var(--blue-slate)]/20 font-mono text-sm text-[var(--blue-slate)]/60 text-right"
-      >
+        class="mt-12 pt-8 border-t border-[var(--blue-slate)]/20 font-mono text-sm text-[var(--blue-slate)]/60 text-right">
         — {{ author }}
       </footer>
     </article>

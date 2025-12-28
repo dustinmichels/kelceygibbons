@@ -4,35 +4,24 @@
   <section class="p-6 md:p-12 max-w-5xl mx-auto space-y-12">
     <div class="flex flex-col md:flex-row gap-12">
       <div class="md:w-1/3">
-        <div
-          class="aspect-square bg-[var(--burnt-peach)] border-4 border-[var(--blue-slate)] relative overflow-hidden"
-        >
-          <img
-            src="/assets/accordian.jpeg"
-            alt="Kelcey Gibbons"
-            class="w-full h-full object-cover"
-          />
+        <div class="aspect-square bg-[var(--burnt-peach)] border-4 border-[var(--blue-slate)] relative overflow-hidden">
+          <img src="/assets/accordian.jpeg" alt="Kelcey Gibbons" class="w-full h-full object-cover" />
         </div>
       </div>
       <div class="md:w-2/3 space-y-6">
-        <h2 class="font-header text-5xl font-black uppercase text-[var(--blue-slate)]">
-          About Kelcey
-        </h2>
+        <h2 class="font-header text-5xl font-black uppercase text-[var(--blue-slate)]">About Kelcey</h2>
         <div class="prose prose-lg text-[var(--blue-slate)] space-y-4">
           <p>
-            I am a PhD Candidate at MIT studying American histories of technology. My work centers
-            on the vibrant, often overlooked lineages of African American education and
-            professionalization.
+            I am a PhD Candidate at MIT studying American histories of technology. My work centers on the vibrant, often
+            overlooked lineages of African American education and professionalization.
           </p>
           <p>
-            By bridging the gap between archival research and multimedia storytelling, I seek to
-            reveal how technological systems have been both sites of exclusion and tools for
-            liberation.
+            By bridging the gap between archival research and multimedia storytelling, I seek to reveal how
+            technological systems have been both sites of exclusion and tools for liberation.
           </p>
           <p>
-            I am a professional daydreamer, a multimedia storyteller, and I love my research so, so
-            much. I believe that understanding our technical past is a prerequisite for building
-            equitable futures.
+            I am a professional daydreamer, a multimedia storyteller, and I love my research so, so much. I believe that
+            understanding our technical past is a prerequisite for building equitable futures.
           </p>
         </div>
         <div class="grid grid-cols-2 gap-4 pt-6">

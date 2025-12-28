@@ -20,7 +20,8 @@ defineProps({
 </script>
 
 <template>
-  <router-link :to="to"
+  <router-link
+    :to="to"
     class="block border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4 transition-transform hover:-translate-y-1 hover:translate-x-1">
     <div class="font-mono text-[10px] uppercase text-[var(--sky-surge)]">
       {{ category }}
