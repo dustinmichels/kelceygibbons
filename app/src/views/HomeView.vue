@@ -1,0 +1,76 @@
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const navigateTo = (page) => {
+  router.push({ name: page })
+}
+</script>
+
+<template>
+  <section class="p-6 md:p-12 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Hero Text -->
+      <div class="lg:col-span-7 space-y-8 relative z-10">
+        <div
+          class="inline-block px-4 py-1 bg-[var(--sky-surge)] text-white font-mono text-sm uppercase"
+        >
+          PhD Candidate @ MIT
+        </div>
+        <h2 class="font-header font-black uppercase tracking-tighter">
+          <div class="text-4xl md:text-5xl lg:text-6xl leading-tight">Learning is</div>
+          <div class="text-5xl md:text-6xl lg:text-7xl leading-[0.9]">
+            <span class="text-[var(--sweet-peony)] underline decoration-sky-400">Liberating</span>
+          </div>
+        </h2>
+        <p class="text-xl md:text-2xl leading-relaxed max-w-xl italic text-[var(--blue-slate)]">
+          Hi! I study American histories of technology by focusing on African American education
+          and professionalization.
+        </p>
+        <div class="flex gap-4">
+          <button
+            @click="navigateTo('about')"
+            class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm"
+          >
+            The Research
+          </button>
+          <button
+            @click="navigateTo('writing')"
+            class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm !bg-[var(--burnt-peach)] text-white"
+          >
+            The Stories
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Image / Visual -->
+      <div class="lg:col-span-5 relative">
+        <div
+          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)]"
+        >
+          <img src="/assets/podium.jpeg" alt="Kelcey Gibbons" class="w-full h-full object-cover" />
+        </div>
+        <!-- Sticker Elements -->
+        <div
+          class="absolute -bottom-6 -left-6 bg-[var(--sweet-peony)] text-white p-4 font-mono text-xs uppercase shadow-lg transform -rotate-3 border-2 border-[var(--blue-slate)]"
+        >
+          Professional Daydreamer
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote Ticker -->
+    <div
+      class="mt-24 border-t-2 border-b-2 border-[var(--blue-slate)] py-4 overflow-hidden whitespace-nowrap"
+    >
+      <div
+        class="inline-block animate-pulse font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
+      >
+        Multimedia Storytelling • African American History • History of Technology • Digital Griot
+        • Multimedia Storytelling • African American History • History of Technology • Digital
+        Griot •
+      </div>
+    </div>
+  </section>
+</template>
