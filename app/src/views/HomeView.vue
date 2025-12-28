@@ -65,11 +65,28 @@ const navigateTo = (page) => {
       class="mt-24 border-t-2 border-b-2 border-[var(--blue-slate)] py-4 overflow-hidden whitespace-nowrap"
     >
       <div
-        class="inline-block animate-pulse font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
+        class="inline-block animate-scroll font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
       >
+        Multimedia Storytelling • African American History • History of Technology • Philly-raised •
+        Multimedia Storytelling • African American History • History of Technology • Philly-raised •
         Multimedia Storytelling • African American History • History of Technology • Philly-raised •
         Multimedia Storytelling • African American History • History of Technology • Philly-raised •
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+</style>
