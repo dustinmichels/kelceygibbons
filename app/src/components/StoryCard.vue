@@ -20,7 +20,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4">
+  <router-link :to="to"
+    class="block border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4 transition-transform hover:-translate-y-1 hover:translate-x-1">
     <div class="font-mono text-[10px] uppercase text-[var(--sky-surge)]">
       {{ category }}
     </div>
@@ -28,11 +29,8 @@ defineProps({
     <p class="text-sm italic text-[var(--blue-slate)]/70">
       {{ excerpt }}
     </p>
-    <router-link
-      :to="to"
-      class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline block"
-    >
+    <div class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline block">
       Read Full Story →
-    </router-link>
-  </div>
+    </div>
+  </router-link>
 </template>
