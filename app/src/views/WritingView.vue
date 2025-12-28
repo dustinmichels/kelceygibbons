@@ -14,17 +14,18 @@ import { Sparkles } from 'lucide-vue-next'
       <!-- Card 1 -->
       <div class="border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4">
         <div class="font-mono text-[10px] uppercase text-[var(--sky-surge)]">
-          Short Story // Afrofuturism
+          Short Story // Identity
         </div>
-        <h3 class="font-header text-2xl uppercase font-bold">The Circuit Weaver</h3>
+        <h3 class="font-header text-2xl uppercase font-bold">ShapeShifter</h3>
         <p class="text-sm italic text-[var(--blue-slate)]/70">
-          "In the heart of the mainframe, she found the rhythm of the loom..."
+          "Let me crawl out of my skin and put on something more comfortable..."
         </p>
-        <button
-          class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline"
+        <router-link
+          to="/writing/shapeshifter"
+          class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline block"
         >
-          Read Fragment →
-        </button>
+          Read Full Story →
+        </router-link>
       </div>
 
       <!-- Card 2 -->
