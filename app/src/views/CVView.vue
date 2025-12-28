@@ -1,6 +1,6 @@
 <template>
   <section class="p-6 md:p-12 max-w-5xl mx-auto space-y-12">
-    <h2 class="font-header text-5xl font-black uppercase text-[var(--blue-slate)]">
+    <h2 class="font-header text-3xl md:text-5xl font-black uppercase text-[var(--blue-slate)]">
       Curriculum Vitae
     </h2>
 
