@@ -4,16 +4,16 @@ import { ArrowLeft } from 'lucide-vue-next'
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   subtitle: {
     type: String,
-    default: 'Short Story'
+    default: 'Short Story',
   },
   author: {
     type: String,
-    default: 'Kelcey Gibbons'
-  }
+    default: 'Kelcey Gibbons',
+  },
 })
 </script>
 
@@ -39,12 +39,16 @@ defineProps({
           {{ title }}
         </h1>
       </header>
-      
-      <div class="prose prose-lg md:prose-xl text-[var(--blue-slate)] font-serif leading-relaxed max-w-none">
+
+      <div
+        class="prose prose-lg md:prose-xl text-[var(--blue-slate)] font-serif leading-relaxed max-w-none"
+      >
         <slot></slot>
       </div>
 
-      <footer class="mt-12 pt-8 border-t border-[var(--blue-slate)]/20 font-mono text-sm text-[var(--blue-slate)]/60 text-right">
+      <footer
+        class="mt-12 pt-8 border-t border-[var(--blue-slate)]/20 font-mono text-sm text-[var(--blue-slate)]/60 text-right"
+      >
         — {{ author }}
       </footer>
     </article>

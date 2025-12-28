@@ -9,7 +9,9 @@ const navigateTo = (page) => {
 </script>
 
 <template>
-  <section class="p-6 md:p-12 lg:py-6 lg:px-12 max-w-7xl mx-auto h-full flex flex-col justify-center">
+  <section
+    class="p-6 md:p-12 lg:py-6 lg:px-12 max-w-7xl mx-auto h-full flex flex-col justify-center"
+  >
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
       <!-- Hero Text -->
       <div class="lg:col-span-7 space-y-8 lg:space-y-4 relative z-10">
@@ -61,9 +63,7 @@ const navigateTo = (page) => {
     </div>
 
     <!-- Quote Ticker -->
-    <div
-      class="mt-24 lg:mt-10 py-4 overflow-hidden whitespace-nowrap"
-    >
+    <div class="mt-24 lg:mt-10 py-4 overflow-hidden whitespace-nowrap">
       <div
         class="inline-block animate-scroll font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
       >

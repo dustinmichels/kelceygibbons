@@ -1,5 +1,6 @@
 <script setup>
 import { Sparkles } from 'lucide-vue-next'
+import StoryCard from '../components/StoryCard.vue'
 </script>
 
 <template>
@@ -12,62 +13,17 @@ import { Sparkles } from 'lucide-vue-next'
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Card 1 -->
-      <div class="border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4">
-        <div class="font-mono text-[10px] uppercase text-[var(--sky-surge)]">
-          Short Story // Identity
-        </div>
-        <h3 class="font-header text-2xl uppercase font-bold">ShapeShifter</h3>
-        <p class="text-sm italic text-[var(--blue-slate)]/70">
-          "Let me crawl out of my skin and put on something more comfortable..."
-        </p>
-        <router-link
-          to="/writing/shapeshifter"
-          class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline block"
-        >
-          Read Full Story →
-        </router-link>
-      </div>
+      <StoryCard category="Short Story // Identity" title="ShapeShifter"
+        excerpt="Let me crawl out of my skin and put on something more comfortable..." to="/writing/shapeshifter" />
 
       <!-- Card 2 -->
-      <div
-        class="border-2 border-[var(--blue-slate)] p-8 !bg-[var(--burnt-peach)] text-white btn-offset space-y-4"
-      >
-        <div class="font-mono text-[10px] uppercase opacity-70">Poetry // Technical</div>
-        <h3 class="font-header text-2xl uppercase font-bold">Ode to the Vacuum Tube</h3>
-        <p class="text-sm italic">
-          "Glass-blown memories / glowing amber in the dark / carrying the voice of a ghost."
-        </p>
-        <button class="font-mono text-xs uppercase font-bold hover:underline">
-          Read Fragment →
-        </button>
-      </div>
+      <StoryCard category="Short Story // Technical" title="Zuckerverse"
+        excerpt="Today, on the show, I have the pleasure of talking with Mark Zuckerberg 2.0 about his plan for Facebook Life..."
+        to="/writing/zuckerverse" />
 
       <!-- Card 3 -->
-      <div class="border-2 border-[var(--blue-slate)] p-8 bg-white btn-offset space-y-4">
-        <div class="font-mono text-[10px] uppercase text-[var(--sky-surge)]">
-          Story // Oral History
-        </div>
-        <h3 class="font-header text-2xl uppercase font-bold">Digital Ancestry</h3>
-        <p class="text-sm italic text-[var(--blue-slate)]/70">
-          Reflections on how we carry our elders into the silicon valley.
-        </p>
-        <button
-          class="text-[var(--sweet-peony)] font-mono text-xs uppercase font-bold hover:underline"
-        >
-          Read Fragment →
-        </button>
-      </div>
-
-      <!-- Visual Grid Filler -->
-      <div
-        class="lg:col-span-2 aspect-[21/9] kente-border border-2 border-[var(--blue-slate)] flex items-center justify-center relative"
-      >
-        <div
-          class="bg-white px-6 py-2 border-2 border-[var(--blue-slate)] font-mono text-xs uppercase font-bold z-10"
-        >
-          Multimedia Gallery Coming Soon
-        </div>
-      </div>
+      <StoryCard category="Story // Oral History" title="Colonial Phil" excerpt="Reflections on history and memory."
+        to="/writing/colonial-phil" />
     </div>
   </section>
 </template>

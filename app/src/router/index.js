@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import WritingView from '../views/WritingView.vue'
 import ShapeShifterView from '../views/writing/ShapeShifterView.vue'
+import ZuckerverseView from '../views/writing/ZuckerverseView.vue'
+import ColonialPhilView from '../views/writing/ColonialPhilView.vue'
 import CVView from '../views/CVView.vue'
 
 const router = createRouter({
@@ -27,6 +29,16 @@ const router = createRouter({
       path: '/writing/shapeshifter',
       name: 'shapeshifter',
       component: ShapeShifterView,
+    },
+    {
+      path: '/writing/zuckerverse',
+      name: 'zuckerverse',
+      component: ZuckerverseView,
+    },
+    {
+      path: '/writing/colonial-phil',
+      name: 'colonial-phil',
+      component: ColonialPhilView,
     },
     {
       path: '/cv',

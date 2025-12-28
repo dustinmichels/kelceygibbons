@@ -4,10 +4,7 @@ import StoryPost from '../../components/StoryPost.vue'
 </script>
 
 <template>
-  <StoryPost
-    title="ShapeShifter"
-    subtitle="Short Story // Identity"
-  >
+  <StoryPost title="ShapeShifter" subtitle="Short Story // Identity">
     <ShapeShifterContent />
   </StoryPost>
 </template>
