@@ -13,28 +13,17 @@ import StoryCard from '../components/StoryCard.vue'
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Card 1 -->
-      <StoryCard
-        category="Short Story // Identity"
-        title="ShapeShifter"
-        excerpt="Let me crawl out of my skin and put on something more comfortable..."
-        to="/writing/shapeshifter"
-      />
+      <StoryCard category="Short Story // Identity" title="ShapeShifter"
+        excerpt="Let me crawl out of my skin and put on something more comfortable..." to="/writing/shapeshifter" />
 
       <!-- Card 2 -->
-      <StoryCard
-        category="Short Story // Technical"
-        title="Zuckerverse"
+      <StoryCard category="Short Story // Fiction" title="Zuckerverse"
         excerpt="Today, on the show, I have the pleasure of talking with Mark Zuckerberg 2.0 about his plan for Facebook Life..."
-        to="/writing/zuckerverse"
-      />
+        to="/writing/zuckerverse" />
 
       <!-- Card 3 -->
-      <StoryCard
-        category="Story // Oral History"
-        title="Colonial Phil"
-        excerpt="Reflections on history and memory."
-        to="/writing/colonial-phil"
-      />
+      <StoryCard category="Story // Personal" title="Colonial Phil" excerpt="Reflections on history and memory."
+        to="/writing/colonial-phil" />
     </div>
   </section>
 </template>

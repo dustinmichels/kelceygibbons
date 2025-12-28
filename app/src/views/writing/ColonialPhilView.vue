@@ -4,7 +4,7 @@ import ColonialPhilContent from './posts/colonial-phil.md'
 </script>
 
 <template>
-  <StoryPost title="Colonial Phil" subtitle="Story // Oral History">
+  <StoryPost title="Colonial Phil" subtitle="Story // Personal">
     <ColonialPhilContent />
   </StoryPost>
 </template>

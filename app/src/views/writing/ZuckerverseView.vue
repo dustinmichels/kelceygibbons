@@ -4,7 +4,7 @@ import ZuckerverseContent from './posts/zuckerverse.md'
 </script>
 
 <template>
-  <StoryPost title="Zuckerverse" subtitle="Poetry // Technical">
+  <StoryPost title="Zuckerverse" subtitle="Short Story // Fiction">
     <ZuckerverseContent />
   </StoryPost>
 </template>
