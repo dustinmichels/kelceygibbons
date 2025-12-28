@@ -47,13 +47,13 @@ const navigateTo = (page) => {
       <!-- Hero Image / Visual -->
       <div class="lg:col-span-5 relative">
         <div
-          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)] lg:max-h-[60vh] lg:w-auto mx-auto"
+          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)] max-w-xs md:max-w-sm lg:max-w-none lg:max-h-[60vh] lg:w-auto mx-auto"
         >
           <img src="/assets/podium.jpeg" alt="Kelcey Gibbons" class="w-full h-full object-cover" />
         </div>
         <!-- Sticker Elements -->
         <div
-          class="absolute -bottom-6 -left-6 bg-[var(--sweet-peony)] text-white p-4 font-mono text-xs uppercase shadow-lg transform -rotate-3 border-2 border-[var(--blue-slate)]"
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:-left-6 lg:translate-x-0 bg-[var(--sweet-peony)] text-white p-4 font-mono text-xs uppercase shadow-lg transform -rotate-3 border-2 border-[var(--blue-slate)] whitespace-nowrap"
         >
           Professional Daydreamer
         </div>
