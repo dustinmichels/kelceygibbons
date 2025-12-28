@@ -67,8 +67,8 @@ const navigateTo = (page) => {
       <div
         class="inline-block animate-pulse font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
       >
-        Multimedia Storytelling • African American History • History of Technology • Digital Griot •
-        Multimedia Storytelling • African American History • History of Technology • Digital Griot •
+        Multimedia Storytelling • African American History • History of Technology • Philly-raised •
+        Multimedia Storytelling • African American History • History of Technology • Philly-raised •
       </div>
     </div>
   </section>

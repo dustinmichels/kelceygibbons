@@ -25,7 +25,7 @@ const navigateTo = (page) => {
             Kelcey <span class="text-[var(--sweet-peony)]">Gibbons</span>
           </h1>
           <p class="font-mono text-xs uppercase tracking-widest text-[var(--burnt-peach)]">
-            Digital Griot / MIT
+            Technologist History / MIT
           </p>
         </div>
 
