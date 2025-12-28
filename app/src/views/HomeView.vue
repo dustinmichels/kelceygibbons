@@ -9,10 +9,10 @@ const navigateTo = (page) => {
 </script>
 
 <template>
-  <section class="p-6 md:p-12 max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <section class="p-6 md:p-12 lg:py-6 lg:px-12 max-w-7xl mx-auto h-full flex flex-col justify-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
       <!-- Hero Text -->
-      <div class="lg:col-span-7 space-y-8 relative z-10">
+      <div class="lg:col-span-7 space-y-8 lg:space-y-4 relative z-10">
         <div
           class="inline-block px-4 py-1 bg-[var(--sky-surge)] text-white font-mono text-sm uppercase"
         >
@@ -47,7 +47,7 @@ const navigateTo = (page) => {
       <!-- Hero Image / Visual -->
       <div class="lg:col-span-5 relative">
         <div
-          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)]"
+          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)] lg:max-h-[60vh] lg:w-auto mx-auto"
         >
           <img src="/assets/podium.jpeg" alt="Kelcey Gibbons" class="w-full h-full object-cover" />
         </div>
@@ -62,7 +62,7 @@ const navigateTo = (page) => {
 
     <!-- Quote Ticker -->
     <div
-      class="mt-24 border-t-2 border-b-2 border-[var(--blue-slate)] py-4 overflow-hidden whitespace-nowrap"
+      class="mt-24 lg:mt-10 py-4 overflow-hidden whitespace-nowrap"
     >
       <div
         class="inline-block animate-scroll font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
