@@ -1,6 +1,4 @@
-<script setup>
-import { Microscope } from 'lucide-vue-next'
-</script>
+<script setup></script>
 
 <template>
   <section class="p-6 md:p-12 max-w-5xl mx-auto space-y-12">

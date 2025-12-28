@@ -19,14 +19,14 @@ const navigateTo = (page) => {
           PhD Candidate @ MIT
         </div>
         <h2 class="font-header font-black uppercase tracking-tighter">
-          <div class="text-4xl md:text-5xl lg:text-6xl leading-tight">Learning is</div>
-          <div class="text-5xl md:text-6xl lg:text-7xl leading-[0.9]">
+          <div class="text-3xl md:text-4xl lg:text-5xl leading-tight">Learning is</div>
+          <div class="text-4xl md:text-5xl lg:text-6xl leading-[0.9]">
             <span class="text-[var(--sweet-peony)] underline decoration-sky-400">Liberating</span>
           </div>
         </h2>
         <p class="text-xl md:text-2xl leading-relaxed max-w-xl italic text-[var(--blue-slate)]">
-          Hi! I study American histories of technology by focusing on African American education
-          and professionalization.
+          Hi! I study American histories of technology by focusing on African American education and
+          professionalization.
         </p>
         <div class="flex gap-4">
           <button
@@ -67,9 +67,8 @@ const navigateTo = (page) => {
       <div
         class="inline-block animate-pulse font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]"
       >
-        Multimedia Storytelling • African American History • History of Technology • Digital Griot
-        • Multimedia Storytelling • African American History • History of Technology • Digital
-        Griot •
+        Multimedia Storytelling • African American History • History of Technology • Digital Griot •
+        Multimedia Storytelling • African American History • History of Technology • Digital Griot •
       </div>
     </div>
   </section>
