@@ -1,0 +1,25 @@
+profile = "golang"
+
+# Formatting Logic
+indent = 2
+max_line_length = 100
+indent_template_blocks = true
+preserve_blank_lines = true
+
+# This prevents djLint from resetting the indentation 
+# of HTML tags inside template blocks
+format_js = false
+format_css = false
+
+# HTML Indentation Fixes
+# 'auto' can sometimes be finicky; forcing true can help
+# in Hugo blocks like {{ define }}
+no_line_after_collect = true
+
+# Ignore common Hugo-specific warnings
+ignore = "H006,H021,H030,H031"
+
+# Specific to your snippet: 
+# This helps keep the HTML and Template tags on the same grid.
+[line_break_after_each_attribute]
+enabled = false
