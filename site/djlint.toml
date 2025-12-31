@@ -1,25 +1,49 @@
+# djlint configuration for Hugo templates
+
+[tool.djlint]
+# Use the go/jinja template profile since Hugo uses Go templates
 profile = "golang"
 
-# Formatting Logic
+# Indentation settings
 indent = 2
-max_line_length = 100
-indent_template_blocks = true
+max_line_length = 120
+max_attribute_length = 120
+
+# Preserve Hugo's formatting style
+preserve_leading_space = true
 preserve_blank_lines = true
 
-# This prevents djLint from resetting the indentation 
-# of HTML tags inside template blocks
-format_js = false
+# Formatting rules
 format_css = false
+format_js = false
 
-# HTML Indentation Fixes
-# 'auto' can sometimes be finicky; forcing true can help
-# in Hugo blocks like {{ define }}
-no_line_after_collect = true
+# Custom template blocks - Hugo specific
+custom_blocks = "define,block,range,with,if,else"
 
-# Ignore common Hugo-specific warnings
-ignore = "H006,H021,H030,H031"
+# Custom template tags - common Hugo functions
+custom_html = "partial,partialCached,readFile,readDir"
 
-# Specific to your snippet: 
-# This helps keep the HTML and Template tags on the same grid.
-[line_break_after_each_attribute]
-enabled = false
+# Ignore rules that conflict with Hugo conventions
+ignore = "H006,H013,H021,H025,H030,H031"
+# H006 - img tag should have height and width attributes (not always needed)
+# H013 - img tag should have an alt attribute (Hugo often uses .Title)
+# H021 - inline styles (sometimes necessary in Hugo)
+# H025 - tag seems to be a orphaned tag (false positives with Hugo syntax)
+# H030 - meta tags outside of head (Hugo uses base templates)
+# H031 - meta tags should be self closing (Go templates handle this)
+
+# Blank line rules
+blank_line_after_tag = "load,extends,include,block,define"
+blank_line_before_tag = "load,extends,include,block,define"
+
+# Don't require closing tags for void elements (img, br, hr, etc.)
+close_void_tags = false
+
+# Linting
+require_pragmas = false
+
+# File extensions to format
+extension = "html"
+
+# Exclude patterns
+exclude = ".git,node_modules,public,resources,themes/**/node_modules"
