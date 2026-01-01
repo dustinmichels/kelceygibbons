@@ -2,6 +2,8 @@
 date = '2025-12-31T12:38:09Z'
 draft = false
 title = 'Zuckerverse'
+category = 'Short Story // Fiction'
+excerpt = 'Today, on the show, I have the pleasure of talking with Mark Zuckerberg 2.0 about his plan for Facebook Life...'
 +++
 
 ## Hot Mic Season 7 EP. 10

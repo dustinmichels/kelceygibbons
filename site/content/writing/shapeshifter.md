@@ -2,6 +2,8 @@
 date = '2025-12-31T12:37:15Z'
 draft = false
 title = 'Shapeshifter'
+category = 'Short Story // Identity'
+excerpt = 'Let me crawl out of my skin and put on something more comfortable...'
 +++
 
 "Let me crawl out of my skin and put on something more comfortable," she said; closing the bathroom door, muffling the sound of running water. Hot steam slipped out from under the door – wanting to escape. He did not know who would be there when the door reopened, but he hoped she would still be there, unchanged.

@@ -1,7 +1,8 @@
 +++
 date = '2025-12-31T12:38:54Z'
 draft = false
-title = 'CV'
+title = 'Curriculum Vitae'
+layout = 'cv'
 +++
 
 ## Publications and Talks

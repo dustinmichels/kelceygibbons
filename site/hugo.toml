@@ -5,7 +5,7 @@ theme = "personal"
 
 [params]
 siteTitle = "Kelcey Gibbons"
-siteSubtitle = "Historian of Technology"
+siteSubtitle = "Historian of Technology / MIT"
 
 homeImg = "images/podium.jpeg"
 homeTag1 = "PhD Candidate @ MIT"

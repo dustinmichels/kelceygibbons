@@ -2,6 +2,12 @@
 date = '2025-12-31T12:38:51Z'
 draft = false
 title = 'About'
+layout = 'about'
+feature_image = 'assets/images/accordian.jpeg'
+block_one_title = "Institution"
+block_one_content = "MIT STS Program"
+block_two_title = "Focus"
+block_two_content = "American Histories of Technology"
 +++
 
 I am a PhD Candidate at MIT studying American histories of technology. My work centers on the vibrant, often overlooked lineages of African American education and professionalization.

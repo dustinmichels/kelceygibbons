@@ -2,6 +2,8 @@
 date = '2025-12-31T12:38:12Z'
 draft = false
 title = 'Colonial Phil'
+category = 'Story // Personal'
+excerpt = 'Reflections on history and memory.'
 +++
 
 The day I noticed Colonial Phil, was new student orientation day. Us Student Ambassadors were all dressed-up in mustard yellow shirts, black slacks, blazers adorned with shiny gold name-tag. It was a serous day. A day when hundreds of people decided to start something new.
