@@ -1,10 +1,15 @@
 baseURL = 'https://kelceygibbons.com/'
 languageCode = 'en-us'
-title = 'Kelcey Gibbons'
-subtitle = "Historian of Technology"
+title = 'Kelcey Gibbons | MIT Historian'
 theme = "personal"
 
-homeTag = "PhD Candidate @ MIT"
+[params]
+siteTitle = "Kelcey Gibbons"
+siteSubtitle = "Historian of Technology"
+
+homeImg = "images/podium.jpeg"
+homeTag1 = "PhD Candidate @ MIT"
+homeTag2 = "Professional Daydreamer"
 homeSlogan = "Learning is Liberating"
 homeText = "Hi! I study American histories of technology by focusing on African American education and professionalization."
 

@@ -1,3 +1,13 @@
 {{ define "main" }}
-  <p>hello world</p>
+<div class="home-container">
+  {{ with resources.GetMatch site.Params.homeImg }}
+    <img src="{{ .RelPermalink }}" alt="" class="home-img"/>
+  {{ end }}
+  <div class="home-tags">
+    <span class="home-tag">{{ site.Params.homeTag1 }}</span>
+    <span class="home-tag">{{ site.Params.homeTag2 }}</span>
+  </div>
+  <h1 class="home-slogan">{{ site.Params.homeSlogan }}</h1>
+  <p class="home-text">{{ site.Params.homeText }}</p>
+</div>
 {{ end }}
