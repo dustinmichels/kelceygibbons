@@ -28,7 +28,7 @@
       class="hidden md:flex gap-8 font-mono text-sm font-bold text-[var(--blue-slate)]">
       {{ range site.Menus.main }}
         <a
-          href="{{ .PageRef }}"
+          href="{{ .PageRef | relURL }}"
           class="hover:text-[var(--sweet-peony)] hover:underline decoration-2 underline-offset-4 transition-all {{ if $.IsMenuCurrent "main" . }}
             text-[var(--sweet-peony)] underline
           {{ end }}">
@@ -57,7 +57,7 @@
     class="md:hidden absolute top-full left-0 w-full bg-[var(--white-smoke)] border-b-2 border-[var(--blue-slate)] p-6 space-y-4 font-mono text-center shadow-xl z-50">
     {{ range site.Menus.main }}
       <a
-        href="{{ .PageRef }}"
+        href="{{ .PageRef | relURL }}"
         class="block py-2 hover:text-[var(--sweet-peony)] {{ if $.IsMenuCurrent "main" . }}
           text-[var(--sweet-peony)] underline
         {{ end }}"
