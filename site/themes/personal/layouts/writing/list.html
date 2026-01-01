@@ -1,6 +1,7 @@
 {{ define "main" }}
-<section class="p-6 md:p-12 max-w-5xl mx-auto">
-    <h2 class="font-header text-5xl font-black uppercase mb-12 flex items-center gap-4">
+  <section class="p-6 md:p-12 max-w-5xl mx-auto">
+    <h2
+      class="font-header text-5xl font-black uppercase mb-12 flex items-center gap-4">
       <span class="text-[var(--burnt-peach)]">Creative</span>
       <i data-lucide="sparkles" class="text-[var(--sky-surge)]"></i>
       Archives
@@ -8,29 +9,40 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="block group h-full">
-        <div class="bg-[var(--white-smoke)] border-2 border-[var(--blue-slate)] p-6 h-full flex flex-col transition-transform hover:-translate-y-1 hover:shadow-lg">
+        <a href="{{ .RelPermalink }}" class="block group h-full">
+          <div
+            class="bg-[var(--white-smoke)] border-2 border-[var(--blue-slate)] p-6 h-full flex flex-col transition-transform hover:-translate-y-1 hover:shadow-lg">
             <div class="flex justify-between items-start mb-4">
-                <span class="font-mono text-xs uppercase font-bold text-[var(--sky-surge)]">
-                    {{ .Params.category | default "Story" }}
-                </span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-[var(--blue-slate)] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              <span
+                class="font-mono text-xs uppercase font-bold text-[var(--sky-surge)]">
+                {{ .Params.category | default "Story" }}
+              </span>
+              <i
+                data-lucide="arrow-up-right"
+                class="w-4 h-4 text-[var(--blue-slate)] opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </div>
-            
-            <h3 class="font-header text-2xl font-bold uppercase mb-3 text-[var(--blue-slate)] group-hover:text-[var(--sweet-peony)] transition-colors">
-                {{ .Title }}
+
+            <h3
+              class="font-header text-2xl font-bold uppercase mb-3 text-[var(--blue-slate)] group-hover:text-[var(--sweet-peony)] transition-colors">
+              {{ .Title }}
             </h3>
-            
-            <p class="text-[var(--blue-slate)]/80 text-sm leading-relaxed flex-grow font-serif">
-                {{ .Params.excerpt | default .Summary }}
+
+            <p
+              class="text-[var(--blue-slate)]/80 text-sm leading-relaxed flex-grow font-serif">
+              {{ .Params.excerpt | default .Summary }}
             </p>
-            
-            <div class="mt-4 pt-4 border-t border-[var(--blue-slate)]/10 flex justify-between items-center">
-                <span class="font-mono text-xs text-[var(--blue-slate)]/60">Read Story</span>
-                <span class="font-mono text-xs text-[var(--blue-slate)]/60">{{ .Date.Format "Jan 2006" }}</span>
+
+            <div
+              class="mt-4 pt-4 border-t border-[var(--blue-slate)]/10 flex justify-between items-center">
+              <span class="font-mono text-xs text-[var(--blue-slate)]/60"
+                >Read Story</span
+              >
+              <span class="font-mono text-xs text-[var(--blue-slate)]/60"
+                >{{ .Date.Format "Jan 2006" }}</span
+              >
             </div>
-        </div>
-      </a>
+          </div>
+        </a>
       {{ end }}
     </div>
   </section>

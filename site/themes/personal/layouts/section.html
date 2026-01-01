@@ -1,12 +1,12 @@
 {{ define "main" }}
-<section class="p-6 md:p-12 max-w-5xl mx-auto space-y-12">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
-</section>
+  <section class="p-6 md:p-12 max-w-5xl mx-auto space-y-12">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ range .Pages }}
+      <section>
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ .Summary }}
+      </section>
+    {{ end }}
+  </section>
 {{ end }}

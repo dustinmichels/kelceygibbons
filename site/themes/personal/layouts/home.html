@@ -1,64 +1,83 @@
 {{ define "main" }}
-<section class="p-6 md:p-12 lg:py-6 lg:px-12 max-w-7xl mx-auto h-full flex flex-col justify-center space-y-12">
+  <section
+    class="p-6 md:p-12 lg:py-6 lg:px-12 max-w-7xl mx-auto h-full flex flex-col justify-center space-y-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        <!-- Hero Text -->
-        <div class="lg:col-span-7 space-y-8 lg:space-y-4 relative z-10">
-            <div class="inline-block px-4 py-1 bg-[var(--sky-surge)] text-white font-mono text-sm uppercase">
-                {{ site.Params.homeTag1 }}
-            </div>
-            <div class="font-header font-black uppercase tracking-tighter">
-                {{ $slogan := site.Params.homeSlogan | default "Learning is Liberating" }}
-                {{ $words := split $slogan " " }}
-                <div class="text-3xl md:text-4xl lg:text-5xl leading-tight">
-                    {{ delimit (first (sub (len $words) 1) $words) " " }}
-                </div>
-                <div class="text-4xl md:text-5xl lg:text-6xl leading-[0.9]">
-                    <span class="text-[var(--sweet-peony)] underline decoration-sky-400">{{ index (last 1 $words) 0 }}</span>
-                </div>
-            </div>
-            <p class="text-xl md:text-2xl leading-relaxed max-w-xl italic text-[var(--blue-slate)]">
-                {{ site.Params.homeText }}
-            </p>
-            <div class="flex gap-4">
-                <a href="/about" class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm inline-block text-[var(--blue-slate)] hover:text-[var(--blue-slate)]">
-                    The Research
-                </a>
-                <a href="/writing" class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm bg-[var(--burnt-peach)] text-white inline-block hover:text-white">
-                    The Stories
-                </a>
-            </div>
+      <!-- Hero Text -->
+      <div class="lg:col-span-7 space-y-8 lg:space-y-4 relative z-10">
+        <div
+          class="inline-block px-4 py-1 bg-[var(--sky-surge)] text-white font-mono text-sm uppercase">
+          {{ site.Params.homeTag1 }}
         </div>
-
-        <!-- Hero Image / Visual -->
-        <div class="lg:col-span-5 relative">
-            <div class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)] max-w-xs md:max-w-sm lg:max-w-none lg:max-h-[60vh] lg:w-auto mx-auto">
-                {{ with resources.GetMatch site.Params.homeImg }}
-                     <img src="{{ .RelPermalink }}" alt="Profile Image" class="w-full h-full object-cover">
-                {{ else }}
-                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white/20 p-8 text-center uppercase font-header">
-                        <i data-lucide="camera" class="w-12 h-12 mb-4"></i>
-                        [ Image Not Found ]
-                        <span class="text-xs mt-4 font-mono">{{ site.Params.homeImg }}</span>
-                    </div>
-                {{ end }}
-                <!-- Decorative Overlays -->
-
-            </div>
-            <!-- Sticker Elements -->
-            <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:-left-6 lg:translate-x-0 bg-[var(--sweet-peony)] text-white p-4 font-mono text-xs uppercase shadow-lg transform -rotate-3 border-2 border-[var(--blue-slate)] whitespace-nowrap">
-                {{ site.Params.homeTag2 }}
-            </div>
+        <div class="font-header font-black uppercase tracking-tighter">
+          {{ $slogan := site.Params.homeSlogan | default "Learning is Liberating" }}
+          {{ $words := split $slogan " " }}
+          <div class="text-3xl md:text-4xl lg:text-5xl leading-tight">
+            {{ delimit (first (sub (len $words) 1) $words) " " }}
+          </div>
+          <div class="text-4xl md:text-5xl lg:text-6xl leading-[0.9]">
+            <span class="text-[var(--sweet-peony)] underline decoration-sky-400"
+              >{{ index (last 1 $words) 0 }}</span
+            >
+          </div>
         </div>
+        <p
+          class="text-xl md:text-2xl leading-relaxed max-w-xl italic text-[var(--blue-slate)]">
+          {{ site.Params.homeText }}
+        </p>
+        <div class="flex gap-4">
+          <a
+            href="/about"
+            class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm inline-block text-[var(--blue-slate)] hover:text-[var(--blue-slate)]">
+            The Research
+          </a>
+          <a
+            href="/writing"
+            class="btn-offset px-8 py-3 font-mono uppercase font-bold text-sm bg-[var(--burnt-peach)] text-white inline-block hover:text-white">
+            The Stories
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image / Visual -->
+      <div class="lg:col-span-5 relative">
+        <div
+          class="aspect-[4/5] bg-[var(--blue-slate)] overflow-hidden relative border-4 border-[var(--blue-slate)] max-w-xs md:max-w-sm lg:max-w-none lg:max-h-[60vh] lg:w-auto mx-auto">
+          {{ with resources.GetMatch site.Params.homeImg }}
+            <img
+              src="{{ .RelPermalink }}"
+              alt="Profile Image"
+              class="w-full h-full object-cover" />
+          {{ else }}
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white/20 p-8 text-center uppercase font-header">
+              <i data-lucide="camera" class="w-12 h-12 mb-4"></i>
+              [ Image Not Found ]
+              <span class="text-xs mt-4 font-mono"
+                >{{ site.Params.homeImg }}</span
+              >
+            </div>
+          {{ end }}
+          <!-- Decorative Overlays -->
+        </div>
+        <!-- Sticker Elements -->
+        <div
+          class="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:-left-6 lg:translate-x-0 bg-[var(--sweet-peony)] text-white p-4 font-mono text-xs uppercase shadow-lg transform -rotate-3 border-2 border-[var(--blue-slate)] whitespace-nowrap">
+          {{ site.Params.homeTag2 }}
+        </div>
+      </div>
     </div>
 
     <!-- Quote Ticker -->
     <div class="mt-24 lg:mt-10 py-4 overflow-hidden whitespace-nowrap">
-        <div class="animate-scroll inline-block font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]">
-            Multimedia Storytelling • African American History • History of Technology • Philly-raised • Multimedia
-            Storytelling • African American History • History of Technology • Philly-raised • Multimedia Storytelling •
-            African American History • History of Technology • Philly-raised • Multimedia Storytelling • African American
-            History • History of Technology • Philly-raised •
-        </div>
+      <div
+        class="animate-scroll inline-block font-mono uppercase text-sm tracking-widest text-[var(--sky-surge)]">
+        Multimedia Storytelling • African American History • History of
+        Technology • Philly-raised • Multimedia Storytelling • African American
+        History • History of Technology • Philly-raised • Multimedia
+        Storytelling • African American History • History of Technology •
+        Philly-raised • Multimedia Storytelling • African American History •
+        History of Technology • Philly-raised •
+      </div>
     </div>
-</section>
+  </section>
 {{ end }}
