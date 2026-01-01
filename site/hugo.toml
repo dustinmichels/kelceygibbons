@@ -2,3 +2,16 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "personal"
+
+[[menu.main]]
+  name = 'about'
+  pageRef = '/about'
+  weight = 10
+[[menu.main]]
+  name = 'cv'
+  pageRef = '/cv'
+  weight = 20
+[[menu.main]]
+  name = 'writing'
+  pageRef = '/writing'
+  weight = 30
