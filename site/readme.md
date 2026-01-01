@@ -16,3 +16,7 @@ Symlinked:
 ```sh
 ln -s CLAUDE.md GEMINI.md
 ```
+
+## TODO:
+
+- Set up [Indie Data](https://indiedata.io/)
