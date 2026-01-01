@@ -1,5 +1,10 @@
 {
   "permissions": {
-    "allow": ["Bash(npm install:*)", "Bash(git remote get-url:*)"]
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(git remote get-url:*)",
+      "Bash(hugo --minify:*)",
+      "Bash(hugo config:*)"
+    ]
   }
 }
