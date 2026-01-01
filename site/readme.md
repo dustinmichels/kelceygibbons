@@ -10,3 +10,9 @@ hugo new content cv.md
 # home page
 hugo new content _index.md
 ```
+
+Symlinked:
+
+```sh
+ln -s CLAUDE.md GEMINI.md
+```
