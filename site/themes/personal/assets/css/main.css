@@ -1,22 +1,69 @@
+:root {
+  --blue-slate: #5e6075;
+  --sweet-peony: #d861a1;
+  --burnt-peach: #df7454;
+  --sky-surge: #3abfd9;
+  --white-smoke: #f7f5f4;
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  background-color: var(--white-smoke);
+  color: var(--blue-slate);
+  font-family: "Libre Baskerville", serif;
+  overflow-x: hidden;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+.font-header {
+  font-family: "Syne", sans-serif;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+.font-mono {
+  font-family: "Space Mono", monospace;
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+/* Grainy texture overlay */
+.noise::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 50;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Ffilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Offset Shadows from Style Guide */
+.btn-offset {
+  background-color: var(--white-smoke);
+  border: 2px solid var(--blue-slate);
+  box-shadow: 5px 5px 0px var(--sweet-peony);
+  transition: all 0.2s ease;
+}
+
+.btn-offset:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--sky-surge);
+}
+
+/* Scrolling animation for ticker */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 80s linear infinite;
+}
+
+/* Pause animation on hover for readability (optional) */
+.group:hover .animate-scroll {
+  animation-play-state: paused;
 }

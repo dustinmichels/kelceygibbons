@@ -5,13 +5,21 @@ theme = "personal"
 
 [params]
 siteTitle = "Kelcey Gibbons"
-siteSubtitle = "Historian of Technology / MIT"
+siteSubtitle = "Historian of Technology // MIT"
 
 homeImg = "images/podium.jpeg"
 homeTag1 = "PhD Candidate @ MIT"
 homeTag2 = "Professional Daydreamer"
 homeSlogan = "Learning is Liberating"
 homeText = "Hi! I study American histories of technology by focusing on African American education and professionalization."
+
+# Social Links
+[params.social]
+twitter = ""  # X/Twitter URL (e.g., "https://twitter.com/username")
+linkedin = "https://www.linkedin.com/in/kelcey-gibbons-ab789a167/" # LinkedIn URL (e.g., "https://linkedin.com/in/username")
+googleScholar = "https://scholar.google.com/citations?user=Pq6IPBYAAAAJ&hl=en"  # Google Scholar profile
+mitProfile = "https://hasts.mit.edu/students/kelcey-gibbons/"  # MIT HASTS profile
+email = "mailto:kelceyg@mit.edu"    # Email address (e.g., "mailto:you@example.com")
 
 [[menu.main]]
 name = 'home'
