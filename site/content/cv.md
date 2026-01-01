@@ -5,7 +5,7 @@ title = 'Curriculum Vitae'
 layout = 'cv'
 +++
 
-## Publications and Talks
+### Publications and Talks
 
 "Inventing the Black Computer Professional" → [Abstractions and Embodiments New Histories of Computing and Society, August 30, 2022.](https://drive.google.com/drive/folders/1ysT8iqCBs3vQ5Q-lvHHKG2YaS3addKOy?usp=sharing)
 

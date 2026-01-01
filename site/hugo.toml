@@ -12,6 +12,12 @@ homeTag1 = "PhD Candidate @ MIT"
 homeTag2 = "Professional Daydreamer"
 homeSlogan = "Learning is Liberating"
 homeText = "Hi! I study American histories of technology by focusing on African American education and professionalization."
+homeTicker = [
+  "Multimedia Storytelling",
+  "African American History",
+  "History of Technology",
+  "Philly-raised"
+]
 
 # Social Links
 [params.social]
