@@ -1,17 +1,29 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kelceygibbons.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Kelcey Gibbons'
+subtitle = "Historian of Technology"
 theme = "personal"
 
+homeTag = "PhD Candidate @ MIT"
+homeSlogan = "Learning is Liberating"
+homeText = "Hi! I study American histories of technology by focusing on African American education and professionalization."
+
 [[menu.main]]
-  name = 'about'
-  pageRef = '/about'
-  weight = 10
+name = 'home'
+pageRef = '/'
+weight = 5
+
 [[menu.main]]
-  name = 'cv'
-  pageRef = '/cv'
-  weight = 20
+name = 'about'
+pageRef = '/about'
+weight = 10
+
 [[menu.main]]
-  name = 'writing'
-  pageRef = '/writing'
-  weight = 30
+name = 'cv'
+pageRef = '/cv'
+weight = 20
+
+[[menu.main]]
+name = 'writing'
+pageRef = '/writing'
+weight = 30
