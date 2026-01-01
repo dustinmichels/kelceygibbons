@@ -136,3 +136,12 @@ body {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+/* About page info blocks */
+.bg-sky-surge-10 {
+  background-color: rgba(58, 191, 217, 0.1);
+}
+
+.bg-sweet-peony-10 {
+  background-color: rgba(216, 97, 161, 0.1);
+}
