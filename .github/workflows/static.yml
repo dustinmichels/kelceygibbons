@@ -1,5 +1,5 @@
-# Workflow for building Vue app and deploying to GitHub Pages
-name: Deploy Vue app to Pages
+# Workflow for building Hugo site and deploying to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -32,20 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          node-version: "20"
-          cache: "npm"
-          cache-dependency-path: "app/package-lock.json"
+          hugo-version: "latest"
+          extended: true
 
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ./app
-
-      - name: Build Vue app
-        run: npm run build
-        working-directory: ./app
+      - name: Build Hugo site
+        run: hugo --minify
+        working-directory: ./site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -53,8 +48,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the dist folder from the build
-          path: "./app/dist"
+          # Upload the public folder from the build
+          path: "./site/public"
 
       - name: Deploy to GitHub Pages
         id: deployment
