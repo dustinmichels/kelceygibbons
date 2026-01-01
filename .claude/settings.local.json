@@ -4,7 +4,8 @@
       "Bash(npm install:*)",
       "Bash(git remote get-url:*)",
       "Bash(hugo --minify:*)",
-      "Bash(hugo config:*)"
+      "Bash(hugo config:*)",
+      "Bash(git add:*)"
     ]
   }
 }

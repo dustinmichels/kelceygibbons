@@ -2,6 +2,7 @@ baseURL = 'https://dustinmichels.github.io/kelceygibbons/'
 languageCode = 'en-us'
 title = 'Kelcey Gibbons | MIT Historian'
 theme = "personal"
+canonifyURLs = true
 
 [params]
 siteTitle = "Kelcey Gibbons"
