@@ -5,15 +5,18 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
-    <header>
-      {{ partial "header.html" . }}
-    </header>
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
+  <body class="noise">
+    <div class="min-h-screen flex flex-col">
+        {{ partial "header.html" . }}
+        
+        <main class="flex-grow">
+            {{ block "main" . }}{{ end }}
+        </main>
+
+        {{ partial "footer.html" . }}
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
   </body>
 </html>
