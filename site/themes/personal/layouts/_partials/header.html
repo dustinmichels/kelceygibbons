@@ -25,7 +25,7 @@
 
     <!-- Desktop Menu -->
     <div
-      class="hidden md:flex gap-8 font-mono text-sm uppercase font-bold text-[var(--blue-slate)]">
+      class="hidden md:flex gap-8 font-mono text-sm font-bold text-[var(--blue-slate)]">
       {{ range site.Menus.main }}
         <a
           href="{{ .PageRef }}"
@@ -54,7 +54,7 @@
     x-transition:leave="transition ease-in duration-150"
     x-transition:leave-start="opacity-100 translate-y-0"
     x-transition:leave-end="opacity-0 -translate-y-2"
-    class="md:hidden absolute top-full left-0 w-full bg-[var(--white-smoke)] border-b-2 border-[var(--blue-slate)] p-6 space-y-4 font-mono uppercase text-center shadow-xl z-50">
+    class="md:hidden absolute top-full left-0 w-full bg-[var(--white-smoke)] border-b-2 border-[var(--blue-slate)] p-6 space-y-4 font-mono text-center shadow-xl z-50">
     {{ range site.Menus.main }}
       <a
         href="{{ .PageRef }}"
