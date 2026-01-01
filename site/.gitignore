@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
+node_modules/
+.DS_Store
 
 ### Hugo ###
 # Generated files by hugo
