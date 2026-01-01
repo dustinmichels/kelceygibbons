@@ -29,6 +29,6 @@ pageRef = '/cv'
 weight = 20
 
 [[menu.main]]
-name = 'writing'
+name = 'Poems & Stories'
 pageRef = '/writing'
 weight = 30

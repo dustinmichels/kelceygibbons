@@ -1,7 +1,7 @@
 +++
 date = '2025-12-31T12:38:51Z'
 draft = false
-title = 'About'
+title = 'About Kelcey'
 layout = 'about'
 feature_image = 'assets/images/accordian.jpeg'
 block_one_title = "Institution"
