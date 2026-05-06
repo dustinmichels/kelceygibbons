@@ -1,8 +1,8 @@
 +++
-date = '2025-12-31T12:38:12Z'
+date = '2020-10-01T00:00:00Z'
 draft = false
 title = 'Colonial Phil'
-category = 'Story // Personal'
+category = 'Diary entry'
 excerpt = 'Reflections on history and memory.'
 +++
 

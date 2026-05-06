@@ -1,8 +1,8 @@
 +++
-date = '2025-12-31T12:37:15Z'
+date = '2020-10-01T00:00:00Z'
 draft = false
 title = 'Shapeshifter'
-category = 'Short Story // Identity'
+category = 'Diary entry'
 excerpt = 'Let me crawl out of my skin and put on something more comfortable...'
 +++
 

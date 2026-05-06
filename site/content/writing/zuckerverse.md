@@ -1,8 +1,8 @@
 +++
-date = '2025-12-31T12:38:09Z'
+date = '2020-05-01T00:00:00Z'
 draft = false
 title = 'Zuckerverse'
-category = 'Short Story // Fiction'
+category = 'Paper written for science and journalism class'
 excerpt = 'Today, on the show, I have the pleasure of talking with Mark Zuckerberg 2.0 about his plan for Facebook Life...'
 +++
 
