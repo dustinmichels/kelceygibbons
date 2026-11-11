@@ -16,4 +16,3 @@ layout = 'cv'
 Introduction → [An Evening with Tressie McMillan Cottom](https://youtu.be/m0dp9HQEdYk?t=187), April 28, 2022.
 
 [An Interview With Merritt Roe Smith May 2025](https://share.descript.com/view/sj5LyU66pnh)
-
